@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olliewould Media | Affordable Photography Services in South West London | olliewould.co.uk</title>
+    <meta name="description" content="Olliewould Media offers professional and affordable photography services including photo editing, digital downloads, and a free 15x10 print for just £50 (3 hours). Student discounts available. Based in South West London.">
+    <meta name="keywords" content="photography, photographer, photo editing, digital photography, affordable photography, student discount photography, event photography, portrait photography, South West London photography, olliewould media, olliewould.co.uk">
+    <meta name="author" content="Olliewould Media">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.olliewould.co.uk/">
+
+    <meta property="og:title" content="Olliewould Media - Professional Photography Services in South West London">
+    <meta property="og:description" content="Affordable photography in South West London: photo editing, digital downloads & a free print. £50 for 3 hours. Student discounts available.">
+    <meta property="og:image" content="https://placehold.co/1200x630/2c3e50/ffffff?text=Olliewould+Media+SW+London"> <meta property="og:url" content="https://www.olliewould.co.uk/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Olliewould Media">
+
+
+    <style>
+        /* --- Global Styles & Resets --- */
+        :root {
+            --primary-color: #1a73e8; /* A professional blue */
+            --secondary-color: #4CAF50; /* A complementary green for accents like discounts */
+            --text-color: #333333;
+            --light-gray: #f4f4f4;
+            --dark-gray: #2c3e50; /* Darker shade for header/footer */
+            --white: #ffffff;
+            --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            --border-radius: 8px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif; /* Using a common, professional font */
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--white);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        h1 { font-size: 2.8rem; color: var(--primary-color); }
+        h2 { font-size: 2.2rem; color: var(--dark-gray); text-align: center; margin-bottom: 2.5rem; position: relative; }
+        h2::after { /* Underline effect for section titles */
+            content: '';
+            width: 70px;
+            height: 3px;
+            background: var(--primary-color);
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+        h3 { font-size: 1.6rem; color: var(--primary-color); }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--primary-color);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        .section-bg-light {
+            background-color: var(--light-gray);
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 12px 28px;
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #155db1; /* Darker shade of primary */
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: var(--secondary-color);
+        }
+        .btn-secondary:hover {
+            background: #3e8e41; /* Darker shade of secondary */
+        }
+
+        /* --- Header & Navigation --- */
+        #main-header {
+            background: var(--dark-gray);
+            color: var(--white);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: top 0.3s;
+        }
+
+        #main-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #main-header .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        #main-header .logo a {
+            color: var(--white);
+        }
+         #main-header .logo span {
+            font-size: 0.9rem;
+            display: block;
+            color: #ccc;
+            font-weight: normal;
+        }
+
+
+        #navbar ul {
+            display: flex;
+        }
+
+        #navbar ul li {
+            margin-left: 25px;
+        }
+
+        #navbar ul li a {
+            color: var(--white);
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        #navbar ul li a:hover, #navbar ul li a.active {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .menu-toggle {
+            display: none; /* Hidden by default, shown on mobile */
+            font-size: 1.5rem;
+            color: var(--white);
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* --- Hero Section --- */
+        #hero {
+            background: url('https://placehold.co/1920x1080/2c3e50/ffffff?text=Olliewould+Media+Photography+SW+London') no-repeat center center/cover; /* Updated placeholder text */
+            color: var(--white);
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            position: relative; /* For overlay */
+            margin-top: 70px; /* Adjust based on header height */
+        }
+
+        #hero::before { /* Dark overlay for text readability */
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        #hero .hero-content {
+            position: relative; /* To sit on top of the overlay */
+            z-index: 1;
+            max-width: 700px;
+        }
+
+        #hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: var(--white); /* Ensure hero h1 is white */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        #hero p {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            color: #f0f0f0; /* Lighter text for hero paragraph */
+        }
+
+        /* --- Services Section --- */
+        #services .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        #services .service-item {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #services .service-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        #services .service-item img.service-icon { /* Specific styling for service icons */
+            width: 70px;
+            height: 70px;
+            margin-bottom: 1.5rem;
+        }
+
+
+        /* --- Pricing Section --- */
+        #pricing .pricing-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: stretch; /* Make cards same height if content differs */
+            gap: 2rem;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        }
+
+        #pricing .pricing-card {
+            background: var(--white);
+            padding: 2.5rem 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            text-align: center;
+            flex-basis: 350px; /* Base width for cards */
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        #pricing .pricing-card.standard-deal {
+             border-top: 5px solid var(--primary-color);
+        }
+        
+        #pricing .pricing-card.student-deal {
+            border-top: 5px solid var(--secondary-color);
+        }
+
+
+        #pricing .pricing-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+         #pricing .pricing-card .deal-name {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+
+        #pricing .price {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        #pricing .pricing-card.standard-deal .price { color: var(--primary-color); }
+        #pricing .pricing-card.student-deal .price { color: var(--secondary-color); }
+
+
+        #pricing .price-duration {
+            font-size: 1rem;
+            color: #777;
+            margin-bottom: 1.5rem;
+        }
+
+        #pricing ul {
+            margin-bottom: 2rem;
+            text-align: left;
+            padding-left: 10px; /* Align checkmarks better */
+        }
+
+        #pricing ul li {
+            margin-bottom: 0.8rem;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        #pricing ul li::before {
+            content: '✔'; /* Checkmark */
+            color: var(--secondary-color);
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        #pricing .student-deal-info {
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 1rem;
+        }
+
+        /* --- Contact Section --- */
+        #contact .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: flex-start;
+        }
+        
+        #contact .contact-info h3 {
+            margin-bottom: 1.5rem;
+        }
+        #contact .contact-info p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        #contact .contact-info p img { /* For icons next to contact details */
+            width:20px; 
+            height: auto;
+            vertical-align: middle; 
+            margin-right: 8px;
+        }
+         #contact .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+
+        #contact-form {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        #contact-form .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        #contact-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        #contact-form input[type="text"],
+        #contact-form input[type="email"],
+        #contact-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+
+        #contact-form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        #form-status {
+            margin-top: 1rem;
+            text-align: center;
+            font-weight: bold;
+        }
+
+
+        /* --- Footer --- */
+        footer {
+            background: var(--dark-gray);
+            color: var(--white);
+            text-align: center;
+            padding: 2.5rem 0;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: var(--primary-color);
+        }
+        footer a:hover {
+            color: var(--white);
+        }
+
+        /* --- Responsive Design --- */
+        @media(max-width: 992px) {
+            #hero h1 { font-size: 2.8rem; }
+            #hero p { font-size: 1.2rem; }
+            #contact .contact-content { grid-template-columns: 1fr; }
+            #contact .contact-info { margin-bottom: 2rem; text-align: center;}
+        }
+
+        @media(max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.8rem; }
+            h3 { font-size: 1.4rem; }
+
+            #main-header .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            #main-header .logo {
+                margin-bottom: 0.5rem; /* Space between logo and potential toggle */
+            }
+
+            .menu-toggle {
+                display: block; /* Show hamburger menu */
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+
+            #navbar {
+                width: 100%;
+            }
+            
+            #navbar ul {
+                display: none; /* Hide nav links by default */
+                flex-direction: column;
+                width: 100%;
+                background-color: var(--dark-gray); /* Match header or slightly different */
+                padding: 1rem 0;
+                position: absolute;
+                top: 100%; /* Position below the header part */
+                left:0;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+            #navbar ul.active { /* Class to show nav links */
+                 display: flex;
+            }
+
+
+            #navbar ul li {
+                margin: 10px 0;
+                text-align: center;
+            }
+            #navbar ul li a {
+                display: block;
+                padding: 10px;
+            }
+
+            #hero { margin-top: 0; height: auto; padding: 100px 20px 60px; } /* Adjust hero for mobile */
+            #hero h1 { font-size: 2.5rem; }
+
+            #pricing .pricing-wrapper {
+                flex-direction: column;
+                align-items: center;
+            }
+            #pricing .pricing-card {
+                width: 90%;
+                max-width: 350px; /* Ensure cards don't get too wide */
+                margin-bottom: 2rem; /* Add space between stacked cards */
+            }
+             #pricing .pricing-card:last-child {
+                margin-bottom: 0;
+            }
+        }
+        @media(max-width: 480px) {
+             #hero h1 { font-size: 2rem; }
+             #hero p { font-size: 1rem; }
+             .btn { padding: 10px 20px; font-size: 0.9rem; }
+             #services .service-item { padding: 1.5rem; }
+             #contact-form { padding: 1.5rem; }
+        }
+
+    </style>
+    </head>
+<body>
+
+    <header id="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="#hero">Olliewould Media</a>
+                <span>olliewould.co.uk</span>
+            </div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                &#9776; </button>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Capturing Life's Best Moments</h1>
+            <p>Professional photography, expert editing, and a beautiful print to cherish. All-inclusive, affordable packages.</p>
+            <a href="#pricing" class="btn">View Our Packages</a>
+        </div>
+    </section>
+
+    <section id="services" class="section-bg-light">
+        <div class="container">
+            <h2>What We Offer</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <img src="https://img.icons8.com/fluency-systems-filled/96/1a73e8/camera.png" alt="Photography session icon" class="service-icon"/>
+                    <h3>Photography</h3>
+                    <p>Creative and professional photography sessions tailored to your vision. We capture stunning, high-quality images that tell your story.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://img.icons8.com/fluency-systems-filled/96/1a73e8/edit-image.png" alt="Photo editing service icon" class="service-icon"/>
+                    <h3>Photo Editing</h3>
+                    <p>Expert editing for all photos taken during your session. We enhance colors, lighting, and details to make your images truly shine.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://img.icons8.com/fluency-systems-filled/96/1a73e8/downloads-folder.png" alt="Digital photo download icon" class="service-icon"/>
+                    <h3>Digital Downloads</h3>
+                    <p>Receive all your professionally edited photos via a convenient and secure download link, ready to share and enjoy.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://img.icons8.com/fluency-systems-filled/96/1a73e8/picture.png" alt="Free photo print icon" class="service-icon"/>
+                    <h3>Free 15x10 Print</h3>
+                    <p>As part of our package, you'll receive a complimentary high-quality 15x10 print of your favorite photograph.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <div class="container">
+            <h2>Our Simple & Affordable Pricing</h2>
+            <div class="pricing-wrapper">
+                <div class="pricing-card standard-deal">
+                    <div>
+                        <h3>Standard Package</h3>
+                        <p class="deal-name">All-Inclusive Deal</p>
+                        <div class="price">£50</div>
+                        <p class="price-duration">For a 3-Hour Session</p>
+                        <ul>
+                            <li>3 Hours of Professional Photography</li>
+                            <li>Expert Photo Editing (on all taken photos)</li>
+                            <li>Secure Digital Download Link</li>
+                            <li>One Free 15x10 Print</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="btn">Book Now</a>
+                </div>
+
+                <div class="pricing-card student-deal">
+                     <div>
+                        <h3>Student Discount</h3>
+                        <p class="deal-name">Exclusive Offer</p>
+                        <div class="price">£45</div>
+                        <p class="price-duration">For a 3-Hour Session</p>
+                        <ul>
+                            <li>3 Hours of Professional Photography</li>
+                            <li>Expert Photo Editing (on all taken photos)</li>
+                            <li>Secure Digital Download Link</li>
+                            <li>One Free 15x10 Print</li>
+                        </ul>
+                        <p class="student-deal-info">A valid student ID is required to avail this offer.</p>
+                    </div>
+                    <a href="#contact" class="btn btn-secondary">Book Student Deal</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-bg-light"> <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Ready to capture your moments?</h3>
+                    <p>We'd love to hear from you! Whether you're ready to book a session or have a few questions, feel free to reach out using the form or the contact details below.</p>
+                    <p><img src="https://img.icons8.com/material-outlined/24/1a73e8/new-post.png" alt="Email Olliewould Media" style="width:20px; vertical-align: middle; margin-right: 8px;"> Email: <a href="mailto:info@olliewould.co.uk">info@olliewould.co.uk</a></p>
+                    <p><img src="https://img.icons8.com/material-outlined/24/1a73e8/phone.png" alt="Call Olliewould Media" style="width:20px; vertical-align: middle; margin-right: 8px;"> Phone: <a href="tel:+442039251234">+44 020 3925 1234</a></p>
+                    <p style="margin-top:1.5rem;">We aim to respond to all inquiries within 24 hours.</p>
+                </div>
+
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn" id="submitButton">Send Message</button>
+                    <p id="form-status"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Olliewould Media (olliewould.co.uk). All Rights Reserved.</p>
+            <p>Designed with care by Olliewould Media. For inquiries, contact <a href="mailto:info@olliewould.co.uk">info@olliewould.co.uk</a>.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbar = document.getElementById('navbar').querySelector('ul');
+            const navLinks = navbar.querySelectorAll('a');
+            const menuToggle = document.getElementById('menu-toggle');
+            const header = document.getElementById('main-header');
+            let lastScrollTop = 0;
+
+            // --- Mobile Menu Toggle ---
+            if (menuToggle) {
+                menuToggle.addEventListener('click', () => {
+                    navbar.classList.toggle('active');
+                    const isExpanded = navbar.classList.contains('active');
+                    menuToggle.setAttribute('aria-expanded', isExpanded);
+                    if (isExpanded) {
+                        menuToggle.innerHTML = '&times;'; // Change to 'X' icon
+                    } else {
+                        menuToggle.innerHTML = '&#9776;'; // Change back to hamburger
+                    }
+                });
+            }
+
+            // --- Smooth Scrolling & Active Link Highlighting ---
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // For mobile: close menu on link click
+                    if (navbar.classList.contains('active')) {
+                        navbar.classList.remove('active');
+                        menuToggle.setAttribute('aria-expanded', 'false');
+                        menuToggle.innerHTML = '&#9776;';
+                    }
+                });
+            });
+            
+            // --- Sticky Header Hide/Show on Scroll ---
+            window.addEventListener('scroll', function() {
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                if (scrollTop > lastScrollTop && scrollTop > header.offsetHeight + 50) {
+                    // Scrolling Down
+                    header.style.top = `-${header.offsetHeight}px`;
+                } else {
+                    // Scrolling Up or at top
+                    header.style.top = '0';
+                }
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+
+                // Active link highlighting
+                let scrollPosition = window.scrollY || document.documentElement.scrollTop;
+                document.querySelectorAll('section[id]').forEach(section => {
+                    const sectionTop = section.offsetTop - header.offsetHeight - 50;
+                    const sectionBottom = sectionTop + section.offsetHeight;
+                    const sectionId = section.getAttribute('id');
+                    const correspondingLink = document.querySelector(`#navbar a[href="#${sectionId}"]`);
+
+                    if (correspondingLink) {
+                        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                            navLinks.forEach(l => l.classList.remove('active'));
+                            correspondingLink.classList.add('active');
+                        }
+                    }
+                });
+                 // If at the very top, ensure 'Home' is active
+                const servicesSection = document.getElementById('services');
+                if (servicesSection && scrollPosition < (servicesSection.offsetTop - header.offsetHeight - 50)) {
+                     navLinks.forEach(link => link.classList.remove('active'));
+                     const homeLink = document.querySelector('#navbar a[href="#hero"]');
+                     if (homeLink) homeLink.classList.add('active');
+                }
+            });
+
+
+            // --- Dynamic Year in Footer ---
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+            // --- Contact Form Handling (Client-Side Demo) ---
+            const contactForm = document.getElementById('contact-form');
+            const formStatus = document.getElementById('form-status');
+            const submitButton = document.getElementById('submitButton');
+
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault(); // Prevent actual submission
+
+                    const name = document.getElementById('name').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const message = document.getElementById('message').value.trim();
+
+                    if (!name || !email || !message) {
+                        formStatus.textContent = 'Please fill in all required fields.';
+                        formStatus.style.color = 'red';
+                        return;
+                    }
+                    if (!validateEmail(email)) {
+                        formStatus.textContent = 'Please enter a valid email address.';
+                        formStatus.style.color = 'red';
+                        return;
+                    }
+
+                    formStatus.textContent = 'Sending your message...';
+                    formStatus.style.color = 'var(--primary-color)';
+                    submitButton.disabled = true;
+                    submitButton.style.opacity = '0.7';
+
+
+                    // Simulate server submission
+                    setTimeout(() => {
+                        formStatus.textContent = 'Thank you! Your message has been "sent". (This is a demo)';
+                        formStatus.style.color = 'var(--secondary-color)';
+                        contactForm.reset();
+                        submitButton.disabled = false;
+                        submitButton.style.opacity = '1';
+
+                         setTimeout(() => { formStatus.textContent = '';}, 5000); // Clear status after 5s
+                    }, 2000);
+                });
+            }
+            function validateEmail(email) {
+                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return re.test(String(email).toLowerCase());
+            }
+
+        });
+    </script>
+
+</body>
+</html>
